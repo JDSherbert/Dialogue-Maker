@@ -9,7 +9,7 @@
 <img align="right" alt="Issues Badge" src="https://img.shields.io/github/issues/jdsherbert/JDSherbert-Repo-Template?label=%E2%9A%A0%EF%B8%8F"/>
 
 <a href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript"> <img height="40" img width="40" src="https://cdn.simpleicons.org/javascript"> </a>
-<a href = "https://www.json.org/json-en.html"> <img height="40" img width="40" src="https://cdn.simpleicons.org/json"> </a> 
+<a href = "https://www.json.org/json-en.html"> <img height="40" img width="40" src="https://cdn.simpleicons.org/json/red"> </a> 
 <!-- Header End --> 
 
 -----------------------------------------------------------------------
