@@ -17,14 +17,18 @@ input.addEventListener('input', () => {
     preview.innerHTML = html;
 });
 
+const fileNameInput = document.getElementById('fileNameInput');
+
 exportBtn.addEventListener('click', () => {
     const rawText = input.value;
 
     const parsed = parseBBCode(rawText);
 
+    const fileName = fileNameInput.value || "dialogue";
+
     exportJSON({
         character: "Example",
         dialogue: rawText,
         parsed: parsed
-    });
+    }, fileName);
 });
