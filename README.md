@@ -3,12 +3,12 @@
 # Repository Template
 
 <!-- Header Start -->
-<a href = "https://docs.unrealengine.com/5.3/en-US/"> <img height="40" img width="40" src="https://cdn.simpleicons.org/unrealengine/white"> </a> 
-
 <img align="right" alt="Stars Badge" src="https://img.shields.io/github/stars/jdsherbert/JDSherbert-Repo-Template?label=%E2%AD%90"/>
 <img align="right" alt="Forks Badge" src="https://img.shields.io/github/forks/jdsherbert/JDSherbert-Repo-Template?label=%F0%9F%8D%B4"/>
 <img align="right" alt="Watchers Badge" src="https://img.shields.io/github/watchers/jdsherbert/JDSherbert-Repo-Template?label=%F0%9F%91%81%EF%B8%8F"/>
 <img align="right" alt="Issues Badge" src="https://img.shields.io/github/issues/jdsherbert/JDSherbert-Repo-Template?label=%E2%9A%A0%EF%B8%8F"/>
+
+<a href = "https://docs.unrealengine.com/5.3/en-US/"> <img height="40" img width="40" src="https://cdn.simpleicons.org/unrealengine/white"> </a> 
 <!-- Header End --> 
 
 -----------------------------------------------------------------------
