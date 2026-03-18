@@ -3,6 +3,7 @@
 import { parseBBCode } from './Modules/Commands/CommandParser.js';
 import { renderPreview } from './Modules/Rendering/PreviewRenderer.js';
 import { exportJSON } from './Modules/IO/Exporter.js';
+import { Languages } from './Modules/Localization/Languages.js';
 
 const input = document.getElementById('dialogueInput');
 const preview = document.getElementById('preview');
