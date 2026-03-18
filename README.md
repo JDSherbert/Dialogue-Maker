@@ -8,16 +8,16 @@
 <img align="right" alt="Watchers Badge" src="https://img.shields.io/github/watchers/jdsherbert/JDSherbert-Repo-Template?label=%F0%9F%91%81%EF%B8%8F"/>
 <img align="right" alt="Issues Badge" src="https://img.shields.io/github/issues/jdsherbert/JDSherbert-Repo-Template?label=%E2%9A%A0%EF%B8%8F"/>
 
-<a href = "https://docs.unrealengine.com/5.3/en-US/"> <img height="40" img width="40" src="https://cdn.simpleicons.org/unrealengine/white"> </a> 
+<a href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript"> <img height="40" img width="40" src="https://cdn.simpleicons.org/js"> </a> 
 <!-- Header End --> 
 
 -----------------------------------------------------------------------
 
 <a href="https://docs.unrealengine.com/5.3/en-US/"> 
-  <img align="left" alt="Unreal Engine Template" src="https://img.shields.io/badge/Unreal%20Engine%20Template-black?style=for-the-badge&logo=unrealengine&logoColor=white&color=black&labelColor=black"> </a>
+  <img align="left" alt="Web Tool" src="https://img.shields.io/badge/Web%20Tool-blue?style=for-the-badge&logo=js&logoColor=white&color=blue&labelColor=blue"> </a>
   
-<a href="https://choosealicense.com/licenses/unlicense/"> 
-  <img align="right" alt="License" src="https://img.shields.io/badge/License%20:%20Unlicense-black?style=for-the-badge&logo=unlicense&logoColor=white&color=black&labelColor=black"> </a>
+<a href="https://choosealicense.com/licenses/mit/"> 
+  <img align="right" alt="License" src="https://img.shields.io/badge/License%20:%20MIT-black?style=for-the-badge&logo=mit&logoColor=white&color=black&labelColor=black"> </a>
   
 <br></br>
 
