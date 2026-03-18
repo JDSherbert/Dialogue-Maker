@@ -9,6 +9,8 @@ const input = document.getElementById('dialogueInput');
 const preview = document.getElementById('preview');
 const exportBtn = document.getElementById('exportBtn');
 
+
+
 input.addEventListener('input', () => {
     const rawText = input.value;
 
@@ -17,6 +19,19 @@ input.addEventListener('input', () => {
 
     preview.innerHTML = html;
 });
+
+function updateLanguageDropdown() {
+    languageSelect.innerHTML = "";
+
+    Languages.forEach(lang => {
+        const option = document.createElement("option");
+        option.value = lang.code;
+        option.textContent = `${lang.code} - ${lang.name}`;
+        languageSelect.appendChild(option);
+    });
+
+    languageSelect.value = currentLanguage;
+}
 
 const fileNameInput = document.getElementById('fileNameInput');
 
