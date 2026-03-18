@@ -7,3 +7,12 @@ export const Languages = [
     { code: "DE", name: "German" },
     { code: "ES", name: "Spanish" }
 ];
+
+export function getLanguageCodes() {
+    return Languages.map(l => l.code);
+}
+
+export function getLanguageName(code) {
+    const lang = Languages.find(l => l.code === code);
+    return lang ? lang.name : code;
+}
