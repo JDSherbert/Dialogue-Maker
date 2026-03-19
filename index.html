@@ -5,54 +5,107 @@
 <head>
     <meta charset="UTF-8">
     <title>Dialogue Maker</title>
-    <style>
-        body {
-            font-family: Arial;
-            display: flex;
-            gap: 20px;
-            padding: 20px;
-        }
-
-        textarea {
-            width: 400px;
-            height: 300px;
-        }
-
-        #preview {
-            width: 400px;
-            min-height: 300px;
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-
-        .shake {
-            animation: shake 0.2s infinite;
-        }
-
-        @keyframes shake {
-            0% { transform: translate(1px, 1px); }
-            50% { transform: translate(-1px, -1px); }
-            100% { transform: translate(1px, -1px); }
-        }
-    </style>
+    <link rel="stylesheet" href="./Style.css">
 </head>
 <body>
 
-<div>
-    <h3>Dialogue Input</h3>
-    <textarea id="dialogueInput"></textarea>
-    <br><br>
-    <label>File Name:</label><br>
-    <input type="text" id="fileNameInput" placeholder="my_dialogue"><br><br>
-    <button id="exportBtn">Export JSON</button>
+<!-- Header -->
+<div class="header">
+	<h1>Dialogue Maker</h1>
+	<p>Create and preview dialogue for your games.</p>
 </div>
 
+<!-- Controls -->
+<div class="controls">
+    
+	<!-- Accessibility -->
+	<label>Theme:</label>
+    <button id="themeToggleBtn">Toggle Theme</button>
+
+	<!-- File I/O -->
+	<label>Import Dialogue File:</label>
+    <input type="file" id="importInput" accept=".json">
+	
+	<label>Export Filename:</label>
+    <input type="text" id="fileNameInput" placeholder="my_dialogue">
+	<button id="exportBtn">Export</button>
+
+</div>
+
+<hr>
+
+<!-- Dialogue Editor -->
+<div class="editor-grid">
+
+	<!-- Portrait -->
+	<div>
+		<label>Portrait Side:</label>
+		<select id="portraitSideSelect">
+    		<option value="left">Left</option>
+    		<option value="right">Right</option>
+		</select>
+	</div>
+
+	<!-- Language -->
+	<div>
+		<label for="languageSelect">Language:</label>
+    	<select id="languageSelect"></select>
+	</div>
+	
+	<div class="editor-column">
+        <label for="portraitInput">Character Portrait:</label>
+        <input type="file" id="portraitInput" accept="image/*">
+        <img id="portraitPreview" src="" alt="Portrait Preview">
+    </div>
+
+    <div class="editor-column">
+
+        <label for="characterNameInput">Character Name:</label>
+        <input type="text" id="characterNameInput" placeholder="Enter character name">
+
+        <label for="dialogueInput">Dialogue Text:</label>
+        <textarea id="dialogueInput" placeholder="Enter dialogue here..."></textarea>
+    </div>
+
+	<div><!-- Spacer --></div>
+
+	<!-- Speech -->
+ 	<div style="display:flex; gap:10px; align-items:center; margin-top:10px;">
+    	<label>Voice:</label>
+    	<select id="voiceSelect"></select>
+
+    	<label>Rate:</label>
+    	<input type="number" id="voiceRate" value="1" step="0.1" min="0.1" max="3">
+
+    	<button id="playVoiceBtn">Play Line</button>
+    	<button id="stopVoiceBtn">Stop</button>
+    	<button id="muteVoiceBtn">🔇</button>
+    	<button id="exportVoiceBtn">Download Voice</button>
+	</div>
+
+</div>
+
+<hr>
+
+<!-- Live Preview -->
 <div>
     <h3>Preview</h3>
-    <div id="preview"></div>
+	<div id="preview">
+    	<div class="preview-stage">
+        	<div id="previewBox"></div>
+    	</div>
+	</div>
+
+	<!-- Playback -->
+	<button id="refreshPreviewBtn">Refresh Preview</button>
+	<hr>
+	<label>Typewriter Speed:</label>
+	<input type="number" id="speedInput" value="30" min="1" max="999">
+	<label>Dialogue Area Height (%):</label>
+	<input type="range" id="heightInput" min="10" max="100" value="40">
+
 </div>
 
-<script type="module" src="./main.js"></script>
-
+<script type="module" src="./Engine.js"></script>
 </body>
 </html>
