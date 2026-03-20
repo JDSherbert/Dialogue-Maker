@@ -161,11 +161,11 @@ Rendering / Speech / Export
 /Engine.js           → Orchestration layer
 /Modules/            → Modular system components
   /Accessibility/
-/Commands/
-/IO/
-/Localization/
-/Rendering/
-/Speech/
+  /Commands/
+  /IO/
+  /Localization/
+  /Rendering/
+  /Speech/
 /Style.css           → UI styling
 ```
 
