@@ -1,7 +1,6 @@
+🌐 https://jdsherbert.github.io/Dialogue-Maker/
 
 # Dialogue Maker
-
-Try the tool here:  https://jdsherbert.github.io/Dialogue-Maker/
 
 <!-- Header Start -->
 <img align="right" alt="Stars Badge" src="https://img.shields.io/github/stars/jdsherbert/Dialogue-Maker?label=%E2%AD%90"/>
